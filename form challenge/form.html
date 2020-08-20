@@ -3,8 +3,201 @@
         <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
         <link rel="stylesheet" href="form.css"> 
         <header class="header">
-            <h1 id="title" class="text-center"
+            <h1 id="title" class="text-center">
+                Concerns about coronavirus
+            </h1>
+            <p id="description" class="description text-center">
+                We are grateful to see you raise your voice and stand up for what you believe in!
+            </p>
         </header>
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">
+                    Name
+                </label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required />
+                <div class="form-group">
+                    <label id="number-label" for="number">Age<span class="clue">(optional)</span></label>
+                    <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age" />
+                </div>
+                <div class="form-group">
+                    <label id="email-label" for="email">Email</label>
+                    <input
+                      type="email"
+                      name="email"
+                      id="email"
+                      class="form-control"
+                      placeholder="Enter your Email"
+                      required
+                    />
+                  </div>
+                <div class="form-group">
+                    <p>Which option best describes your current role as a citizen?</p>
+                    <select id="dropdown" name="role" class="form-control" required>
+                    <option disabled selected value>Select current role</option>
+                    <option value="student">Student</option>
+                    <option value="job">Full Time Job</option>
+                    <option value="learner">Full Time Rebel</option>
+                    <option value="preferNo">Little bit of this little bit of that</option>
+                    <option value="other">Other</option>
+                </select>
+                </div>
+                <div class="form-group">
+                    <p>Is your government doing its job properly by keeping its people safe?</p>
+                         <label>
+                        <input
+                          name="user-recommend"
+                          value="definitely"
+                          type="radio"
+                          class="input-radio"
+                          checked
+                        />Definitely
+                        </label>
+                        <label>
+                            <input
+                              name="user-recommend"
+                              value="maybe"
+                              type="radio"
+                              class="input-radio"
+                            />Maybe
+                        </label>
+                        
+                        <label>
+                            <input
+                            name="user-recommend"
+                            value="not-sure"
+                            type="radio"
+                             class="input-radio"
+                            />
+                            Definitely not
+                        </label>
+                        <div class="form-group">
+                            <p>
+                              What would you change about how coronavirus is being managed?
+                            </p>
+                            <select id="most-like" name="mostLike" class="form-control" required>
+                              <option disabled selected value>Select an option</option>
+                              <option value="challenges">Free Health Care</option>
+                              <option value="projects">Emplyment Protection about the self isolated</option>
+                              <option value="community">Tax relief for businesses</option>
+                              <option value="openSource">Social Gatherings rules</option>
+                            </select>
+                          </div>
+                      
+                          <div class="form-group">
+                            <p>
+                              Any personal changes you noticed during the pandemic?
+                              <span class="clue">(Check all that apply)</span>
+                            </p>
+                      
+                            <label
+                              ><input
+                                name="prefer"
+                                value="front-end-projects"
+                                type="checkbox"
+                                class="input-checkbox"
+                              />Daily routine</label
+                            >
+                            <label>
+                              <input
+                                name="prefer"
+                                value="back-end-projects"
+                                type="checkbox"
+                                class="input-checkbox"
+                              />Playing old nostalgic games</label
+                            >
+                            <label
+                              ><input
+                                name="prefer"
+                                value="data-visualization"
+                                type="checkbox"
+                                class="input-checkbox"
+                              />Getting fat</label
+                            >
+                            <label
+                              ><input
+                                name="prefer"
+                                value="challenges"
+                                type="checkbox"
+                                class="input-checkbox"
+                              />Actually starting to exercise from home</label
+                            >
+                            <label
+                              ><input
+                                name="prefer"
+                                value="open-source-community"
+                                type="checkbox"
+                                class="input-checkbox"
+                              />Agression towards family members</label
+                            >
+                            <label
+                              ><input
+                                name="prefer"
+                                value="gitter-help-rooms"
+                                type="checkbox"
+                                class="input-checkbox"
+                              />Substance withdrawal issues because of being unable to get out</label
+                            >
+                            <label
+                              ><input
+                                name="prefer"
+                                value="videos"
+                                type="checkbox"
+                                class="input-checkbox"
+                              />Depression</label
+                            >
+                            <label
+                              ><input
+                                name="prefer"
+                                value="city-meetups"
+                                type="checkbox"
+                                class="input-checkbox"
+                              />Scrolling & scrolling & scrolling</label
+                            >
+                            <label
+                              ><input
+                                name="prefer"
+                                value="wiki"
+                                type="checkbox"
+                                class="input-checkbox"
+                              />Rolling & rolling & rolling </label
+                            >
+                            <label
+                              ><input
+                                name="prefer"
+                                value="forum"
+                                type="checkbox"
+                                class="input-checkbox"
+                              />Visit old notes and photographs</label
+                            >
+                            <label
+                              ><input
+                                name="prefer"
+                                value="additional-courses"
+                                type="checkbox"
+                                class="input-checkbox"
+                              />Declutter, clean and organizee more</label
+                            >
+                          </div>
+                      
+                          <div class="form-group">
+                            <p>Any comments or suggestions?</p>
+                            <textarea
+                              id="comments"
+                              class="input-textarea"
+                              name="comment"
+                              placeholder="Enter your comment here..."
+                            ></textarea>
+                          </div>
+                      
+                          <div class="form-group">
+                            <button type="submit" id="submit" class="submit-button">
+                              Submit
+                            </button>
+                </div>
+            </div>
+        </form>
+
     </div>
       
 </html>
